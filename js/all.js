@@ -12,7 +12,7 @@ function render(showData) {
                 <input type="checkbox" ${i.status}>
                 <span>${i.content}</span>
               </label>
-              <a href="#" class="delete">X</a>
+              <a href="#" class="delete"></a>
             </li>`;
   });
   list.innerHTML = str;
