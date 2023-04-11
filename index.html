@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <title>TODO LIST</title>
+    <link rel="shortcut icon" href="./images/todolist-icon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Meri">
+    <meta name="keywords" content="TODO LIST, 待辦事項小幫手, 工作好夥伴！">
+    <meta property="og:title" content="TODO LIST">
+    <meta property="og:description" content="歡迎來到 TODO LIST 幫助您記錄待辦事項！ 提升工作效率的好幫手">
+    <meta property="og:site_name" content="TODO LIST">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:image" content="./images/todolist-icon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODO LIST</h1>
+        <div class="card input">
+            <input type="text" class="add_input" placeholder="請輸入待辦事項" />
+            <a href="#" class="btn_add">+</a>
+        </div>
+        <div class="card card_list">
+            <ul class="tab">
+                <li class="active" data-status="all">全部</li>
+                <li data-status="undone">待完成</li>
+                <li data-status="done">已完成</li>
+            </ul>
+            <div class="cart_content">
+                <ul class="list">
+        <!-- <li>
+                <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>起床刷牙</span>
+                </label>
+                <a href="#" class="delete">X</a>
+            </li> -->
+                </ul>
+                <div class="list_footer">
+                    <p><span class="todo_num">0</span> 個待完成項目</p>
+                    <a class="clear_list" href="#">清除已完成項目</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="./all.js"></script>
+</body>
+
+</html>
